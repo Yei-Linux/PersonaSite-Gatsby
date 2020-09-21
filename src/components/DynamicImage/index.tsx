@@ -8,10 +8,11 @@ interface Props {
   children : React.ReactNode,
   width: string,
   height: string,
-  margin: string
+  margin: string,
+  borderRadius : string
 }
 
-const DynamicImage = ({ imageName , children, width, height, margin }: Props) => {
+const DynamicImage = ({ imageName , children, width, height, margin, borderRadius }: Props) => {
   const [imageState,setImageState] = useState(null);
   const data = useStaticQuery(graphql`
     query {
@@ -48,7 +49,7 @@ const DynamicImage = ({ imageName , children, width, height, margin }: Props) =>
     <Fragment>
         {
           imageState &&
-          <ImageBanner height={height} width={width} margin={margin} fluid={imageState?.node.childImageSharp.fluid}>
+          <ImageBanner height={height} width={width} margin={margin} borderRadius={borderRadius} fluid={imageState?.node.childImageSharp.fluid}>
             {children}
           </ImageBanner> 
         }

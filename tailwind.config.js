@@ -14,7 +14,12 @@ module.exports = {
         xs: "20rem"
       },
       width: {
-        80: "25rem"
+        80: "25rem",
+        90: "30rem",
+        "fit": "fit-content"
+      },
+      minHeight: {
+        "screen-80": "80vh"
       }
     }
   }

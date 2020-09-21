@@ -6,21 +6,24 @@ import DynamicImage from "../DynamicImage";
 interface Props {
     isRow : boolean,
     isFirstBackground : boolean,
-    imagePath: string
+    imagePath: string,
+    isReverse : boolean,
+    borderRadius : string,
+    sectionTitle: string,
+    children : React.ReactNode
 }
  
-const Section = ({isRow, isFirstBackground, imagePath} : Props) => {
+const Section = ({isRow, isFirstBackground, imagePath, isReverse, borderRadius, sectionTitle , children} : Props) => {
     return (
-        <SectionContainer isRow={isRow} isFirstBackground={isFirstBackground}>
-            <DynamicImage imageName={imagePath}  children={null} width={"300px"} height={"300px"} margin={"0"}/>
+        <SectionContainer isRow={isRow} isFirstBackground={isFirstBackground} isReverse={isReverse}>
+            <DynamicImage imageName={imagePath}  children={null} width={"300px"} height={"300px"} margin={"0"}  borderRadius={borderRadius}/>
             
             <SectionText>
                 <SectionTitle>
-                    Let me Introduce myself.
+                    {sectionTitle}
                 </SectionTitle>
                 <SectionSubTitle>
-                    I'm a FullStack Developer based in Lima, Peru.
-                    I have a passion for programming and helping others.
+                    {children}
                 </SectionSubTitle>
             </SectionText>
         </SectionContainer>

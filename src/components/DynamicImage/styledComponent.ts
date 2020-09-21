@@ -8,4 +8,8 @@ export const ImageBanner = styled(BackgroundImage)`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:after {
+        border-radius: ${props => props?.borderRadius};
+    }
 `;
