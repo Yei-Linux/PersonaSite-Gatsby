@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialNetworks from "../../components/SocialNetworks";
 
 import { FooterContainer, PreFooter, FooterContent, PreFooterTitle, PreFooterSubTitle, FooterText } from "./styledComponent";
 
@@ -15,7 +16,8 @@ const Footer = ({ isPreFooter } : Props) => {
                     <PreFooterSubTitle>Have an exciting project you need some help? Send me over an email, and let's chat.</PreFooterSubTitle>
                 </PreFooter>
             }
-
+            
+            <SocialNetworks color="#fff" backgroundColor={"#407088"}/>
             <FooterContent>
                 <FooterText>YeiLinux-All rights reserved</FooterText>
             </FooterContent>

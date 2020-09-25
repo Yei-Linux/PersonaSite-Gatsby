@@ -18,6 +18,7 @@ export const PotionTitle = tw.p`
     w-auto
     text-center
     py-4
+    not-italic
 `
 
 export const PosionBox = styled.div`
