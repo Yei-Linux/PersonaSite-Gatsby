@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+
 import BackgroundImage from "gatsby-background-image";
 
 export const ImageBanner = styled(BackgroundImage)`
@@ -13,3 +14,6 @@ export const ImageBanner = styled(BackgroundImage)`
         border-radius: ${props => props?.borderRadius};
     }
 `;
+
+
+

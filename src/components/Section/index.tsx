@@ -3,6 +3,8 @@ import React from 'react';
 import { SectionContainer, SectionTitle, SectionSubTitle, SectionText } from "./styledComponent";
 import DynamicImage from "../DynamicImage";
 
+import { BounceAnimation } from "../../styles/animationsComponents";
+
 interface Props {
     isRow : boolean,
     isFirstBackground : boolean,
@@ -16,7 +18,9 @@ interface Props {
 const Section = ({isRow, isFirstBackground, imagePath, isReverse, borderRadius, sectionTitle , children} : Props) => {
     return (
         <SectionContainer isRow={isRow} isFirstBackground={isFirstBackground} isReverse={isReverse}>
-            <DynamicImage imageName={imagePath}  children={null} width={"300px"} height={"300px"} margin={"0"}  borderRadius={borderRadius}/>
+            <BounceAnimation>
+                <DynamicImage imageName={imagePath}  children={null} width={"300px"} height={"300px"} margin={"0"}  borderRadius={borderRadius}/>
+            </BounceAnimation>
             
             <SectionText>
                 <SectionTitle>

@@ -1,6 +1,7 @@
 import React from 'react';
 import SocialNetworks from "../../components/SocialNetworks";
 
+import { Wave } from "react-animated-text"
 import { FooterContainer, PreFooter, FooterContent, PreFooterTitle, PreFooterSubTitle, FooterText } from "./styledComponent";
 
 interface Props {
@@ -12,7 +13,9 @@ const Footer = ({ isPreFooter } : Props) => {
         <FooterContainer>
             {
                 isPreFooter && <PreFooter>
-                    <PreFooterTitle>I occasionally take on freelance opportunities.</PreFooterTitle>
+                    <PreFooterTitle>
+                        <Wave text="I occasionally take on freelance opportunities." effect="stretch" effectChange={2.0} />
+                    </PreFooterTitle>
                     <PreFooterSubTitle>Have an exciting project you need some help? Send me over an email, and let's chat.</PreFooterSubTitle>
                 </PreFooter>
             }
