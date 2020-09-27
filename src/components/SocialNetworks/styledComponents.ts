@@ -9,19 +9,27 @@ export const SocialNetworksContainer = styled.ul<{ backgroundColor : string }>`
 export const SocialItem = tw.a`
     inline-block
     mr-2
+    rounded-full 
+    h-16 w-16 
+    flex 
+    items-center 
+    justify-center
+    border-4
+    border-solid 
+    border-ocendark
 `
 export const FacebookIcon = styled(FaFacebook)<{ iconColor : string }>`
-    color: ${(props) => props?.iconColor};
+    color: #2667ff;
 `
 
 export const LinkedinIcon = styled(FaLinkedin)<{ iconColor : string }>`
-    color: ${(props) => props?.iconColor};
+    color: #3e92cc;
 `
 
 export const GithubIcon = styled(FaGithub)<{ iconColor : string }>`
-    color: ${(props) => props?.iconColor};
+    color: #4d6a6d;
 `
 
 export const YoutubeIcon = styled(FaYoutube)<{ iconColor : string }>`
-    color: ${(props) => props?.iconColor};
+    color: #da1e37;
 `

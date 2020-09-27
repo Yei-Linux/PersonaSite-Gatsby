@@ -18,6 +18,7 @@ export const TitleContainer = tw.h4`
   text-center
   font-bold
   p-4
+  text-mainvariant
 `
 
 export const SubtitleContainer = tw.p`
@@ -55,6 +56,7 @@ export const InfoButton = styled.button`
   color: #7510f7;
   font-weight: bold;
   width: 70%;
+  max-width: 240px;
   border: 2px solid #7510f7;
   margin: 0px auto;
   padding: 1rem;

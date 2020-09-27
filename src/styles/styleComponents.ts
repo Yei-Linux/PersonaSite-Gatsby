@@ -25,10 +25,14 @@ export const TextContainer = tw.div`
 export const TextTitle = tw.h4`
     p-4
     text-3xl
+    font-indiecustom
+    text-thirdvariant
     font-bold
+    border-b-4
 `
 
 export const TextSubtitle = tw.p`
     p-4
     text-lg
+    font-semibold
 `

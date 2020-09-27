@@ -18,6 +18,7 @@ export const MainTextBanner = tw.p`
     text-2xl
     font-semibold
     h-auto
+    text-thirdvariant
 `
 
 export const SecondaryTextBanner = tw.p`

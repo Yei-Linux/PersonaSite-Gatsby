@@ -8,6 +8,7 @@ export const HeaderContainer  = tw.div`
     w-full
     p-5
     z-50
+    bg-transparentvariant
 `
 
 export const LogoContainer = tw.div`
@@ -26,14 +27,10 @@ export const HeaderItem = tw.li`
 
 export const HeaderItemText = tw.a`
     inline-block
-    border
-    bg-yellow-600
-    border-yellow-500
-    rounded
-    text-blue-100
     py-1
     px-3
-    hover:border-yellow-600
-    hover:bg-yellow-700
+    border-b-4
+    text-mainvariant
+    font-semibold
     hover:cursor-pointer
 `

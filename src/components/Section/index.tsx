@@ -23,7 +23,7 @@ const Section = ({isRow, isFirstBackground, imagePath, isReverse, borderRadius, 
             </BounceAnimation>
             
             <SectionText>
-                <SectionTitle>
+                <SectionTitle isFirstBackground={isFirstBackground}>
                     {sectionTitle}
                 </SectionTitle>
                 <SectionSubTitle>

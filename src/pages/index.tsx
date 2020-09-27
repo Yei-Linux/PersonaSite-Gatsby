@@ -26,7 +26,7 @@ const IndexPage = () => (
     >
       I'm a FullStack Developer based in Lima, Peru. I have a passion for
       programming and helping others.
-      <SocialNetworks color={"#8c82fc"} backgroundColor={"#fff"}/>
+      <SocialNetworks color={"#7510F7"} backgroundColor={"#fff"}/>
     </Section>
     <Section
       isRow={true}

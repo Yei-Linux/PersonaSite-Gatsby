@@ -10,6 +10,25 @@ module.exports = {
       height: "20rem"
     },
     extend: {
+      fontFamily: {
+        'condensed': ["'Open Sans Condensed'", 'sans-serif'],
+        'ptsans': ["'PT Sans'", 'sans-serif'],
+        'indiecustom': ["'Indie Flower'", 'cursive']  
+      },
+      backgroundColor: {
+        'mainvariant': "#7f9cf5",
+        'darkvariant': "#141c3a",
+        'transparentvariant': "#fffffff5"
+      },
+      borderColor: {
+        'dark': "#141c3a",
+        'ocendark': "#007ea7"
+      },
+      textColor: {
+        "mainvariant": "#7f9cf5",
+        "secondaryvariant": "#4fd1c5",
+        "thirdvariant": "#f6ad55"
+      },
       height: {
         xs: "20rem"
       },

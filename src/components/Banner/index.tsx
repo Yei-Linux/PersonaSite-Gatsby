@@ -2,7 +2,7 @@ import React from 'react';
 
 import DynamicImage from "../DynamicImage";
 import { LeftAndRightAnimation } from "../../styles/animationsComponents"
-
+import { Wave } from "react-animated-text"
 import { FlexContainer,TextContainer, MainTextBanner, SecondaryTextBanner } from "./styledComponent";
 
 interface Props {
@@ -17,7 +17,13 @@ const Banner = ({} : Props) => {
           </LeftAndRightAnimation>
   
           <TextContainer>
-            <MainTextBanner>I'm Jesus Alvan</MainTextBanner>
+            <MainTextBanner>
+              <Wave
+                text="Hi, Im Jesus Alvan"
+                effect="stretch"
+                effectChange={2.0}
+              />
+            </MainTextBanner>
             <SecondaryTextBanner>a FullStack Developer</SecondaryTextBanner>
           </TextContainer>
         </FlexContainer>
