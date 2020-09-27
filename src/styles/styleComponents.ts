@@ -7,3 +7,28 @@ export const PotionsContainer = tw.div`
     flex-wrap
     py-5
 ` 
+export const WorkProjectsContainer = tw.div`
+    flex 
+    flex-col
+    justify-center
+    items-center
+`
+
+export const TextContainer = tw.div`
+    flex 
+    flex-col
+    justify-center
+    items-center
+    m-4
+`
+
+export const TextTitle = tw.h4`
+    p-4
+    text-3xl
+    font-bold
+`
+
+export const TextSubtitle = tw.p`
+    p-4
+    text-lg
+`

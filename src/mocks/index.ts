@@ -153,3 +153,48 @@ export const otherSkills: any = [
     bubbleColor: "#c3bef0",
   }
 ]
+
+export const workProjects : any = [
+  {
+    imagePath: "work1.png",
+    iconPath: "icon-dobby.jpg",
+    title: "DailyManagment",
+    subtitle: "Application to managment tasks and interactive with more people."
+  },
+  {
+    imagePath: "work1.png",
+    iconPath: "icon-dobby.jpg",
+    title: "DailyFood",
+    subtitle: "Application to prepare recipes of food's week."
+  },
+  {
+    imagePath: "work1.png",
+    iconPath: "icon-dobby.jpg",
+    title: "DailyNews",
+    subtitle: "Application to get news(scrapping), show news and interactive with people."
+  },
+  {
+    imagePath: "work1.png",
+    iconPath: "icon-dobby.jpg",
+    title: "DailyIdentity",
+    subtitle: "Application to managment token of application that you can register."
+  },
+  {
+    imagePath: "work1.png",
+    iconPath: "icon-dobby.jpg",
+    title: "DailyNotification",
+    subtitle: "API to send sms and emails people"
+  },
+  {
+    imagePath: "work1.png",
+    iconPath: "icon-dobby.jpg",
+    title: "UseScreenRecording",
+    subtitle: "My library allows recording any element on screen."
+  },
+  {
+    imagePath: "work1.png",
+    iconPath: "icon-dobby.jpg",
+    title: "TeacherBot",
+    subtitle: "Application that teach any theme you search on it."
+  }
+]

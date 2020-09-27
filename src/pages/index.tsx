@@ -4,12 +4,13 @@ import Layout from "../layouts"
 import Banner from "../components/Banner"
 import Section from "../components/Section"
 import SocialNetworks from "../components/SocialNetworks";
+import CardContainer from "../components/CardContainer";
 
 import Potion from "../components/Potion"
 
-import { PotionsContainer } from "../styles/styleComponents";
+import { PotionsContainer, WorkProjectsContainer, TextContainer, TextSubtitle, TextTitle } from "../styles/styleComponents";
 
-import { backEndSkills, dataBaseSkills, frontEndSkills, otherSkills } from "../mocks";
+import { backEndSkills, dataBaseSkills, frontEndSkills, otherSkills, workProjects } from "../mocks";
 
 const IndexPage = () => (
   <Layout isPreFooter={true}>
@@ -115,6 +116,16 @@ const IndexPage = () => (
         }
       </PotionsContainer>
     </Section>
+
+    <WorkProjectsContainer>
+      <TextContainer>
+        <TextTitle>My Recent Work</TextTitle>
+        <TextSubtitle>Here are few projects I've worked on recently. Want to see more?</TextSubtitle>
+      </TextContainer>
+
+       <CardContainer cards={workProjects} />
+    </WorkProjectsContainer>
+
   </Layout>
 )
 
