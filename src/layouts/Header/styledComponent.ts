@@ -3,7 +3,7 @@ import tw from "tailwind.macro"
 export const HeaderContainer  = tw.div`
     fixed
     flex
-    justify-between
+    justify-start
     bg-gray-200
     w-full
     p-5
