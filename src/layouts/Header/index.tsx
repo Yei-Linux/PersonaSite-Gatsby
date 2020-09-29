@@ -16,13 +16,16 @@ const Header = ({} : Props) => {
 
       <HeaderItems>
         <HeaderItem>
-          <HeaderItemText>About</HeaderItemText>
+          <HeaderItemText>AboutMe</HeaderItemText>
+        </HeaderItem>
+        <HeaderItem>
+          <HeaderItemText>Frontend Skills</HeaderItemText>
+        </HeaderItem>
+        <HeaderItem>
+          <HeaderItemText>Backend Skills</HeaderItemText>
         </HeaderItem>
         <HeaderItem>
           <HeaderItemText>Projects</HeaderItemText>
-        </HeaderItem>
-        <HeaderItem>
-          <HeaderItemText>Notes</HeaderItemText>
         </HeaderItem>
       </HeaderItems>
     </HeaderContainer>

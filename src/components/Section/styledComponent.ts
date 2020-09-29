@@ -29,7 +29,7 @@ export const SectionTitle = styled.h4<{ isFirstBackground : boolean }>`
             border-b-4
         `
     };
-    ${props => (props?.isFirstBackground ? tw`text-secondaryvariant` : tw`text-thirdvariant`)};
+    ${props => (props?.isFirstBackground ? tw`text-secondaryvariant` : tw`text-fourthvariant`)};
 ` 
 
 export const SectionSubTitle = tw.h4`

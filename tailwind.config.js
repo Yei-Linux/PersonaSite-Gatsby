@@ -27,7 +27,9 @@ module.exports = {
       textColor: {
         "mainvariant": "#7f9cf5",
         "secondaryvariant": "#4fd1c5",
-        "thirdvariant": "#f6ad55"
+        "thirdvariant": "#f6ad55",
+        "fourthvariant": "#ffff3f",
+        "darkvariant": "#141c3a"
       },
       height: {
         xs: "20rem"
