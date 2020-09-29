@@ -8,7 +8,7 @@ import CardContainer from "../components/CardContainer";
 
 import Potion from "../components/Potion"
 
-import { PotionsContainer, WorkProjectsContainer, TextContainer, TextSubtitle, TextTitle } from "../styles/styleComponents";
+import { PotionsContainer, WorkProjectsContainer, TextContainer, TextSubtitle, TextTitle, Fixative } from "../styles/styleComponents";
 
 import { backEndSkills, dataBaseSkills, frontEndSkills, otherSkills, workProjects } from "../mocks";
 
@@ -16,6 +16,7 @@ const IndexPage = () => (
   <Layout isPreFooter={true}>
     <Banner />
 
+    <Fixative id={"aboutme"}  marginBottomStyle="30px"/>
     <Section
       isRow={false}
       isFirstBackground={true}
@@ -28,6 +29,8 @@ const IndexPage = () => (
       programming and helping others.
       <SocialNetworks color={"#7510F7"} backgroundColor={"#fff"}/>
     </Section>
+
+    <Fixative id={"frontend"}  marginBottomStyle="0px"/>
     <Section
       isRow={true}
       isFirstBackground={false}
@@ -50,6 +53,8 @@ const IndexPage = () => (
         }
       </PotionsContainer>
     </Section>
+
+    <Fixative id={"backend"}  marginBottomStyle="0px"/>
     <Section
       isRow={true}
       isFirstBackground={true}
@@ -116,7 +121,8 @@ const IndexPage = () => (
         }
       </PotionsContainer>
     </Section>
-
+    
+    <Fixative id={"projects"} marginBottomStyle="40px"/>
     <WorkProjectsContainer>
       <TextContainer>
         <TextTitle>My Recent Work</TextTitle>

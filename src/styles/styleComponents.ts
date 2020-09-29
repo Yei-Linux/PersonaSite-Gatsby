@@ -1,4 +1,5 @@
 import tw from "tailwind.macro";
+import styled from "@emotion/styled";
 
 export const PotionsContainer = tw.div`
     flex
@@ -33,6 +34,11 @@ export const TextTitle = tw.h4`
 
 export const TextSubtitle = tw.p`
     p-4
+    text-center
     text-lg
     font-semibold
+`
+export const Fixative = styled.a<{marginBottomStyle : string}>`
+    display: block;
+    margin-bottom: ${props => props?.marginBottomStyle}
 `

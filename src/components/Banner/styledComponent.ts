@@ -23,22 +23,36 @@ export const MainTextBanner = tw.p`
     text-mainvariant
 `
 
-export const SecondaryTextBanner = tw.p`
-    text-xl
-    font-medium
-    h-auto
-`
+export const SecondaryTextBanner = styled.p`
+    ${
+        tw`
+        text-xl
+        font-medium
+        h-auto
+        `
+    };
+    @media (max-width: 600px) {
+        display: none;
+    }
+` 
 
 export const BaseStickContainer = tw.div`
     flex
     justify-center
 `
 
-export const BaseStickElement = tw.div`
-    h-48
-    w-6
-    bg-orange-500
-`
+export const BaseStickElement = styled.div`
+    ${
+        tw`
+            h-48
+            w-6
+            bg-orange-500
+        `
+    };
+    @media (max-width: 600px) {
+        height: 13px;
+    }
+` 
 
 export const WoodenSign = styled.div`
     ${

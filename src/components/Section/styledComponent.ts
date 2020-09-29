@@ -6,6 +6,9 @@ export const SectionContainer = styled.div`
     ${props => (props?.isRow ? tw`flex-row` : tw`flex-col`)};
     ${props => (props?.isFirstBackground ? tw`bg-white` : tw`bg-mainvariant`)};
     ${props => (props?.isReverse ? (props?.isRow ? tw`flex-row-reverse` :tw`flex-col-reverse`) : null )};
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `
 
 export const SectionText = tw.div`
@@ -23,22 +26,24 @@ export const SectionTitle = styled.h4<{ isFirstBackground : boolean }>`
             font-indiecustom
             font-semibold
             h-auto
-            w-80
             text-center
             py-4
             border-b-4
         `
     };
+    width: 90%;
     ${props => (props?.isFirstBackground ? tw`text-secondaryvariant` : tw`text-fourthvariant`)};
 ` 
 
-export const SectionSubTitle = tw.h4`
-    text-xl
-    font-semibold
-    h-auto
-    text-blue-800
-    w-80
-    text-center
-    py-4
-    italic
+export const SectionSubTitle = styled.h4`
+    ${tw`
+        text-xl
+        font-semibold
+        h-auto
+        text-blue-800
+        text-center
+        py-4
+        italic
+    `}; 
+    width: 90%;
 `

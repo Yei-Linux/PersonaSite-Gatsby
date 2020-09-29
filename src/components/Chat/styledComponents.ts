@@ -1,29 +1,62 @@
 import tw from "tailwind.macro"
 import styled from "@emotion/styled"
+import { keyframes } from "@emotion/core"
 
-export const ChatContainer = styled.div<{isVisible : boolean}>`
+export const fadeInTopKeyframe = keyframes`
+    from {
+		opacity: 0;
+		transform: translate3d(0, 50%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+`
+
+export const fadeInDownKeyframe = keyframes`
+    from {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		opacity: 0.5;
+		transform: translate3d(0, 200%, 0);
+	}
+`
+
+export const ChatContainer = styled.div<{ isVisible: boolean }>`
   ${tw`
             flex
             flex-col
             fixed
             rounded-lg
         `};
-  display: ${props => !props.isVisible && "none"};
-  bottom: 90px;
+  animation: ${props =>
+      props.isVisible ? fadeInDownKeyframe : fadeInTopKeyframe}
+    0.5s ease-in both;
   right: 20px;
-  width: 350px;
+  width: 280px;
   z-index: 100;
+  @media (min-width: 601px) {
+    bottom: 95px;
+  }
+  @media (max-width: 600px) {
+    bottom: 15px;
+  }
 `
 
 export const ChatButton = styled.div`
   ${tw`
+            flex
+            justify-center
+            items-center
             bg-black
             fixed
             rounded-full
         `};
   bottom: 10px;
   right: 20px;
-  width:70px;
+  width: 70px;
   height: 70px;
   z-index: 100;
 `

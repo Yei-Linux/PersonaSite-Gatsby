@@ -49,7 +49,16 @@ const Chat = ({}: Props) => {
         </ChatBody>
       </ChatContainer>
 
-      <ChatButton onClick={handleToggleChatButton}></ChatButton>
+      <ChatButton onClick={handleToggleChatButton}>
+          <DynamicImage
+            imageName={"chat-icon.png"}
+            width={"3rem"}
+            height={"3rem"}
+            margin={"0"}
+            borderRadius={"50%"}
+            children={null}
+          />
+      </ChatButton>
     </Fragment>
   )
 }

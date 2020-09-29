@@ -3,7 +3,7 @@ import tw from "tailwind.macro"
 
 export const CardContainer = styled.div`
   background-color: white;
-  max-width: 360px;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
   overflow: hidden;

@@ -26,17 +26,29 @@ export const PreFooter = styled.div`
     padding: 30px 60px;
     margin-bottom: 50px;
     margin-top: -70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 `  
 
-export const PreFooterTitle = tw.p`
-    font-condensed
-    font-ptsans
-    font-indiecustom
-    text-3xl
-    mr-10
-    w-90
-    h-auto
-    text-center
+export const PreFooterTitle = styled.p`
+    ${tw`
+        font-condensed
+        font-ptsans
+        font-indiecustom
+        text-3xl
+        max-w-90
+        h-auto
+        text-center
+    `};
+  @media (min-width: 601px) {
+    margin-right: 2.5rem;
+  }
+  @media (max-width: 600px) {
+    margin-right: 0px;
+  }
 `
 
 export const PreFooterButton = styled(InfoButton)`
@@ -70,6 +82,7 @@ export const FooterSubtext = tw.p`
 
 export const FooterInformation = tw.p`
     text-2xl
+    text-center
     font-semibold
     font-condensed
     font-ptsans
