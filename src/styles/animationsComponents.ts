@@ -93,9 +93,7 @@ export const LinearBorderAnimation = styled.div`
     background-repeat: no-repeat;
     background-size: 50% 50%, 50% 50%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#ffd166, #ffd166),
-      linear-gradient(#7510f7, #7510f7), linear-gradient(#7510f7, #7510f7),
-      linear-gradient(#ffd166, #ffd166);
+    background-image: linear-gradient(#99c1de,#99c1de),linear-gradient(#4895ef,#4895ef),linear-gradient(#4895ef,#4895ef),linear-gradient(#99c1de,#99c1de);
     animation: ${linearBorderKeyframe} 4s linear infinite;
   }
 

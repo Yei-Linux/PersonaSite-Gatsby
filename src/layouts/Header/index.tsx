@@ -7,6 +7,8 @@ import {
   HeaderItemText,
 } from "./styledComponent"
 
+import DynamicImage from "../../components/DynamicImage";
+
 interface Props {}
 
 const Header = ({}: Props) => {
@@ -25,7 +27,16 @@ const Header = ({}: Props) => {
 
   return (
     <HeaderContainer>
-      <LogoContainer></LogoContainer>
+      <LogoContainer>
+        <DynamicImage
+            imageName={"mainlogo.png"}
+            children={null}
+            width={"60px"}
+            height={"60px"}
+            margin={"0"}
+            borderRadius={"0"}
+        />
+      </LogoContainer>
 
       <HeaderItems>
         <HeaderItem>

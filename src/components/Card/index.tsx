@@ -9,7 +9,7 @@ import {
   InfoContainer,
   InfoButton,
   IconCard,
-  TextContainer,
+  TextContainer, OtherInfoContainer, OtherInfoButton
 } from "./styledComponent"
 
 interface Props {
@@ -17,9 +17,13 @@ interface Props {
   iconPath: string
   title: string
   subtitle: string
+  backgroundSize?: string,
+  frontUrl? : string,
+  backUrl? : string,
+  webUrl ? : string
 }
 
-const Card = ({ imagePath, iconPath, title, subtitle }: Props) => {
+const Card = ({ imagePath, iconPath, title, subtitle, backgroundSize = "cover", frontUrl = "", backUrl = "", webUrl= "" }: Props) => {
   return (
     <CardContainer>
       <DynamicImage
@@ -38,6 +42,7 @@ const Card = ({ imagePath, iconPath, title, subtitle }: Props) => {
           margin={"0"}
           borderRadius={"50%"}
           children={null}
+          backgroundSize={backgroundSize}
         />
       </IconCard>
 
@@ -46,8 +51,12 @@ const Card = ({ imagePath, iconPath, title, subtitle }: Props) => {
         <SubtitleContainer>{subtitle}</SubtitleContainer>
 
         <ActionsContainer>
+          <OtherInfoContainer>
+            {frontUrl !== "" && <OtherInfoButton href={frontUrl} target={"_blank"} isFront={true}>Front</OtherInfoButton>}
+            {backUrl !== "" &&  <OtherInfoButton href={backUrl} target={"_blank"} isFront={false}>Back</OtherInfoButton>}
+          </OtherInfoContainer>
           <InfoContainer>
-            <InfoButton>Visit Web</InfoButton>
+            {webUrl !== "" && <InfoButton href={webUrl} target={"_blank"}>Visit Web</InfoButton>}
           </InfoContainer>
         </ActionsContainer>
       </TextContainer>

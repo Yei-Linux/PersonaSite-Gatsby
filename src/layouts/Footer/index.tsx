@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import SocialNetworks from "../../components/SocialNetworks"
 
 import { Wave } from "react-animated-text"
@@ -15,11 +15,14 @@ import {
 
 import DynamicImage from "../../components/DynamicImage"
 
+import ChatContext from "../../context/Chat/ChatContext";
+
 interface Props {
   isPreFooter: boolean
 }
 
 const Footer = ({ isPreFooter }: Props) => {
+  const { setClickToChat } = useContext(ChatContext)
   return (
     <FooterContainer>
       {isPreFooter && (
@@ -31,7 +34,7 @@ const Footer = ({ isPreFooter }: Props) => {
               effectChange={2.0}
             />
           </PreFooterTitle>
-          <PreFooterButton>I got it!</PreFooterButton>
+          <PreFooterButton onClick={setClickToChat}>I got it!</PreFooterButton>
         </PreFooter>
       )}
 

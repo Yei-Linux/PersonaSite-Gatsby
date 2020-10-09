@@ -157,44 +157,82 @@ export const otherSkills: any = [
 export const workProjects : any = [
   {
     imagePath: "work1.png",
-    iconPath: "icon-dobby.jpg",
+    iconPath: "logo1.png",
     title: "DailyManagment",
-    subtitle: "Application to managment tasks and interactive with more people."
+    subtitle: "Application to managment tasks and interactive with more people.",
+    backgroundSize:"cover",
+    codeFrontUrl: "https://github.com/Yei-Linux/ManagmentProjects-ReactJs",
+    codeBackUrl: "https://github.com/Yei-Linux/ManagmentProjects-NodeJS",
+    webUrl: ""
   },
   {
-    imagePath: "work1.png",
-    iconPath: "icon-dobby.jpg",
+    imagePath: "work2.jpg",
+    iconPath: "logo2.png",
     title: "DailyFood",
-    subtitle: "Application to prepare recipes of food's week."
+    subtitle: "Application to prepare recipes of food's week.",
+    backgroundSize:"92%",
+    codeFrontUrl: "https://github.com/Yei-Linux/DailyFood-Angular",
+    codeBackUrl: "https://github.com/Yei-Linux/DailyFood-SpringBoot",
+    webUrl: ""
   },
   {
-    imagePath: "work1.png",
-    iconPath: "icon-dobby.jpg",
+    imagePath: "work3.jpg",
+    iconPath: "logo3.jpg",
     title: "DailyNews",
-    subtitle: "Application to get news(scrapping), show news and interactive with people."
+    subtitle: "Application to get news(scrapping), show news and interactive with people.",
+    backgroundSize:"92%",
+    codeFrontUrl: "https://github.com/Yei-Linux/DailyNews-NextJs",
+    codeBackUrl: "https://github.com/Yei-Linux/DailyNews-ApolloServer",
+    webUrl: ""
   },
   {
-    imagePath: "work1.png",
-    iconPath: "icon-dobby.jpg",
+    imagePath: "work4.jpg",
+    iconPath: "logo2.png",
     title: "DailyIdentity",
-    subtitle: "Application to managment token of application that you can register."
+    subtitle: "Application to managment token of application that you can register.",
+    backgroundSize:"92%",
+    codeFrontUrl: "https://github.com/Yei-Linux/DailyIdentity-Angular",
+    codeBackUrl: "https://github.com/Yei-Linux/DailyIdentity-SpringTDD",
+    webUrl: ""
   },
   {
-    imagePath: "work1.png",
-    iconPath: "icon-dobby.jpg",
+    imagePath: "work5.jpg",
+    iconPath: "logo4.png",
     title: "DailyNotification",
-    subtitle: "API to send sms and emails people"
+    subtitle: "API to send sms and emails people",
+    backgroundSize:"cover",
+    codeFrontUrl: "",
+    codeBackUrl: "https://github.com/Yei-Linux/DailyNotification-Spring",
+    webUrl: ""
   },
   {
-    imagePath: "work1.png",
-    iconPath: "icon-dobby.jpg",
+    imagePath: "work6.png",
+    iconPath: "logo5.png",
     title: "UseScreenRecording",
-    subtitle: "My library allows recording any element on screen."
+    subtitle: "My library allows recording any element on screen.",
+    backgroundSize:"92%",
+    codeFrontUrl: "https://github.com/Yei-Linux/useScreeRecording-YL",
+    codeBackUrl: "",
+    webUrl: "https://www.npmjs.com/package/use-screen-recording-yl"
   },
   {
-    imagePath: "work1.png",
-    iconPath: "icon-dobby.jpg",
+    imagePath: "work7.png",
+    iconPath: "logo6.png",
     title: "TeacherBot",
-    subtitle: "Application that teach any theme you search on it."
+    subtitle: "Application that teach any theme you search on it.",
+    backgroundSize:"92%",
+    codeFrontUrl: "",
+    codeBackUrl: "https://github.com/Yei-Linux/DeathTeacher-Bot",
+    webUrl: ""
+  },
+  {
+    imagePath: "work8.png",
+    iconPath: "logo7.png",
+    title: "DailyScraping",
+    subtitle: "Scraping Application to get daily news on diferentes pages",
+    backgroundSize:"92%",
+    codeFrontUrl: "",
+    codeBackUrl: "https://github.com/Yei-Linux/DailyNew-ScrapyCrawler-Python",
+    webUrl: ""
   }
 ]

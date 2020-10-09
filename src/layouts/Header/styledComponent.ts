@@ -9,6 +9,8 @@ export const HeaderContainer  = tw.div`
     p-5
     z-50
     bg-transparentvariant
+    justify-between
+    flex-row-reverse
 `
 
 export const LogoContainer = tw.div`

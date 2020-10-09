@@ -1,0 +1,1 @@
+export const IS_OPEN_CHAT = "IS_OPEN_CHAT";

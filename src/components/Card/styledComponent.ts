@@ -26,6 +26,13 @@ export const SubtitleContainer = tw.p`
   p-4
 `
 
+export const OtherInfoContainer = tw.div`
+  flex
+  justify-center
+  items-center
+  p-6
+`
+
 export const ActionsContainer = styled.div`
   padding: 0 padding-size 1.2rem;
   display: flex;
@@ -52,7 +59,9 @@ export const IconCard = styled.div`
   }
 `
 
-export const InfoButton = styled.button`
+export const InfoButton = styled.a`
+  display: inline-block;
+  text-decoration: none;
   color: #7510f7;
   font-weight: bold;
   width: 70%;
@@ -64,15 +73,47 @@ export const InfoButton = styled.button`
   box-sizing: border-box;
   border-radius: 1.5rem / 50%;
   transition: background-color 100ms ease-in-out,
-    transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  text-align: center;
   &:hover {
     background-color: #7510f7;
     color: white;
     transform: scale(1.1);
+    cursor: pointer;
   }
   &:active {
     background-color: #7510f7;
     transform: scale(1);
+    cursor: pointer;
+  }
+`
+
+export const OtherInfoButton = styled.a<{isFront : boolean}>`
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  color: ${(props)=> props?.isFront ? "#f9c74f" : "#219ebc" };
+  font-weight: bold;
+  width: 40%;
+  max-width: 140px;
+  border: 2px solid ${(props)=> props?.isFront ? "#f9c74f" : "#219ebc" };
+  margin: 0px auto;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 1.5rem / 50%;
+  transition: background-color 100ms ease-in-out,
+    transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  &:hover {
+    background-color: ${(props)=> props?.isFront ? "#f9c74f" : "#219ebc" };
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  &:active {
+    background-color: ${(props)=> props?.isFront ? "#f9c74f" : "#219ebc" };
+    transform: scale(1);
+    cursor: pointer;
   }
 `
 

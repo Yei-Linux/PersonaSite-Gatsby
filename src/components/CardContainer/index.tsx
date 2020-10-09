@@ -16,6 +16,10 @@ const CardContainer = ({ cards }: Props) => {
           iconPath={card.iconPath}
           title={card.title}
           subtitle={card.subtitle}
+          backgroundSize={card.backgroundSize}
+          frontUrl={card.codeFrontUrl}
+          backUrl={card.codeBackUrl}
+          webUrl={card.webUrl}
         />
       ))}
     </CardsContainer>

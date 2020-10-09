@@ -47,6 +47,7 @@ const Banner = ({}: Props) => {
                   text="Hi, Im Jesus Alvan"
                   effect="stretch"
                   effectChange={2.0}
+                  delay={10.0}
                 />
               </MainTextBanner>
 

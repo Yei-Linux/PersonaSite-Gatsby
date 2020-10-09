@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
 
 export const fadeInTopKeyframe = keyframes`
-    from {
+  from {
 		opacity: 0;
 		transform: translate3d(0, 50%, 0);
 	}
@@ -14,7 +14,7 @@ export const fadeInTopKeyframe = keyframes`
 `
 
 export const fadeInDownKeyframe = keyframes`
-    from {
+  from {
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
@@ -32,7 +32,7 @@ export const ChatContainer = styled.div<{ isVisible: boolean }>`
             rounded-lg
         `};
   animation: ${props =>
-      props.isVisible ? fadeInDownKeyframe : fadeInTopKeyframe}
+      props.isVisible ? fadeInTopKeyframe : fadeInDownKeyframe}
     0.5s ease-in both;
   right: 20px;
   width: 280px;
@@ -82,7 +82,7 @@ export const SubTextHeader = tw.p`
     py-2
 `
 
-export const ChatBody = tw.div`
+export const ChatBody = tw.form`
     flex
     flex-col
     justify-center
@@ -104,4 +104,11 @@ export const TextAreaField = tw.textarea`
 
 export const Button = tw.button`
     bg-white hover:cursor-pointer hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow
+`
+
+export const TextAlert = tw.span`
+  block
+  w-full
+  text-red-500     
+  font-semibold
 `

@@ -9,10 +9,11 @@ interface Props {
   width: string,
   height: string,
   margin: string,
-  borderRadius : string
+  borderRadius : string,
+  backgroundSize? : string
 }
 
-const DynamicImage = ({ imageName , children, width, height, margin, borderRadius }: Props) => {
+const DynamicImage = ({ imageName , children, width, height, margin, borderRadius, backgroundSize = "cover"}: Props) => {
   const [imageState,setImageState] = useState(null);
   const data = useStaticQuery(graphql`
     query {
@@ -49,7 +50,7 @@ const DynamicImage = ({ imageName , children, width, height, margin, borderRadiu
     <Fragment>
         {
           imageState &&
-          <ImageBanner height={height} width={width} margin={margin} borderRadius={borderRadius} fluid={imageState?.node.childImageSharp.fluid}>
+          <ImageBanner backgroundSize={backgroundSize} height={height} width={width} margin={margin} borderRadius={borderRadius} fluid={imageState?.node.childImageSharp.fluid}>
             {children}
           </ImageBanner> 
         }
