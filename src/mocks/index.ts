@@ -163,7 +163,8 @@ export const workProjects : any = [
     backgroundSize:"cover",
     codeFrontUrl: "https://github.com/Yei-Linux/ManagmentProjects-ReactJs",
     codeBackUrl: "https://github.com/Yei-Linux/ManagmentProjects-NodeJS",
-    webUrl: ""
+    webUrl: "",
+    isInProcess: true
   },
   {
     imagePath: "work2.jpg",
@@ -172,8 +173,9 @@ export const workProjects : any = [
     subtitle: "Application to prepare recipes of food's week.",
     backgroundSize:"92%",
     codeFrontUrl: "https://github.com/Yei-Linux/DailyFood-Angular",
-    codeBackUrl: "https://github.com/Yei-Linux/DailyFood-SpringBoot",
-    webUrl: ""
+    codeBackUrl: "https://github.com/Yei-Linux/DailyNotification-Spring",
+    webUrl: "https://trusting-payne-d525d0.netlify.app/",
+    isInProcess: false
   },
   {
     imagePath: "work3.jpg",
@@ -183,7 +185,8 @@ export const workProjects : any = [
     backgroundSize:"92%",
     codeFrontUrl: "https://github.com/Yei-Linux/DailyNews-NextJs",
     codeBackUrl: "https://github.com/Yei-Linux/DailyNews-ApolloServer",
-    webUrl: ""
+    webUrl: "",
+    isInProcess: true
   },
   {
     imagePath: "work4.jpg",
@@ -193,7 +196,8 @@ export const workProjects : any = [
     backgroundSize:"92%",
     codeFrontUrl: "https://github.com/Yei-Linux/DailyIdentity-Angular",
     codeBackUrl: "https://github.com/Yei-Linux/DailyIdentity-SpringTDD",
-    webUrl: ""
+    webUrl: "",
+    isInProcess: true
   },
   {
     imagePath: "work5.jpg",
@@ -203,7 +207,8 @@ export const workProjects : any = [
     backgroundSize:"cover",
     codeFrontUrl: "",
     codeBackUrl: "https://github.com/Yei-Linux/DailyNotification-Spring",
-    webUrl: ""
+    webUrl: "https://daily-notification.herokuapp.com/notificationProvider/swagger-ui.html",
+    isInProcess: false
   },
   {
     imagePath: "work6.png",
@@ -213,7 +218,8 @@ export const workProjects : any = [
     backgroundSize:"92%",
     codeFrontUrl: "https://github.com/Yei-Linux/useScreeRecording-YL",
     codeBackUrl: "",
-    webUrl: "https://www.npmjs.com/package/use-screen-recording-yl"
+    webUrl: "https://www.npmjs.com/package/use-screen-recording-yl",
+    isInProcess: false
   },
   {
     imagePath: "work7.png",
@@ -223,7 +229,8 @@ export const workProjects : any = [
     backgroundSize:"92%",
     codeFrontUrl: "",
     codeBackUrl: "https://github.com/Yei-Linux/DeathTeacher-Bot",
-    webUrl: ""
+    webUrl: "",
+    isInProcess: true
   },
   {
     imagePath: "work8.png",
@@ -233,6 +240,7 @@ export const workProjects : any = [
     backgroundSize:"92%",
     codeFrontUrl: "",
     codeBackUrl: "https://github.com/Yei-Linux/DailyNew-ScrapyCrawler-Python",
-    webUrl: ""
+    webUrl: "",
+    isInProcess: false
   }
 ]

@@ -20,6 +20,7 @@ const CardContainer = ({ cards }: Props) => {
           frontUrl={card.codeFrontUrl}
           backUrl={card.codeBackUrl}
           webUrl={card.webUrl}
+          isInprocess={card.isInProcess}
         />
       ))}
     </CardsContainer>

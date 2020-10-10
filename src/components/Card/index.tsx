@@ -9,7 +9,7 @@ import {
   InfoContainer,
   InfoButton,
   IconCard,
-  TextContainer, OtherInfoContainer, OtherInfoButton
+  TextContainer, OtherInfoContainer, OtherInfoButton, TextProcess, ProcessInfoContainer
 } from "./styledComponent"
 
 interface Props {
@@ -20,10 +20,11 @@ interface Props {
   backgroundSize?: string,
   frontUrl? : string,
   backUrl? : string,
-  webUrl ? : string
+  webUrl ? : string,
+  isInprocess ? : boolean
 }
 
-const Card = ({ imagePath, iconPath, title, subtitle, backgroundSize = "cover", frontUrl = "", backUrl = "", webUrl= "" }: Props) => {
+const Card = ({ imagePath, iconPath, title, subtitle, backgroundSize = "cover", frontUrl = "", backUrl = "", webUrl= "", isInprocess = false }: Props) => {
   return (
     <CardContainer>
       <DynamicImage
@@ -58,6 +59,9 @@ const Card = ({ imagePath, iconPath, title, subtitle, backgroundSize = "cover", 
           <InfoContainer>
             {webUrl !== "" && <InfoButton href={webUrl} target={"_blank"}>Visit Web</InfoButton>}
           </InfoContainer>
+          <ProcessInfoContainer>
+            { isInprocess &&  <TextProcess>En Proceso</TextProcess>}
+          </ProcessInfoContainer>
         </ActionsContainer>
       </TextContainer>
     </CardContainer>

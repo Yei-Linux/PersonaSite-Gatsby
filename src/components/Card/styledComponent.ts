@@ -33,6 +33,19 @@ export const OtherInfoContainer = tw.div`
   p-6
 `
 
+export const ProcessInfoContainer = tw.div`
+  flex
+  justify-center
+  items-center
+`
+
+export const TextProcess = tw.p`
+  text-xl
+  text-center
+  font-semibold
+  text-red-500
+`
+
 export const ActionsContainer = styled.div`
   padding: 0 padding-size 1.2rem;
   display: flex;
