@@ -1,4 +1,5 @@
 import tw from "tailwind.macro"
+import styled from "@emotion/styled";
 
 export const HeaderContainer  = tw.div`
     fixed
@@ -35,4 +36,10 @@ export const HeaderItemText = tw.a`
     text-mainvariant
     font-semibold
     hover:cursor-pointer
+`
+
+export const BreakPoint = styled.span`
+    @media screen and (max-width: 500px) { 
+        display: none;
+    }
 `

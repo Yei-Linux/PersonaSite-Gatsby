@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { ImageBanner } from "./styledComponent"
+import { GifBanner, ImageBanner } from "./styledComponent"
 
 interface Props {
   imageName : string,
@@ -10,10 +10,12 @@ interface Props {
   height: string,
   margin: string,
   borderRadius : string,
-  backgroundSize? : string
+  backgroundSize? : string,
+  isGif? : boolean,
+  gifPath? : any 
 }
 
-const DynamicImage = ({ imageName , children, width, height, margin, borderRadius, backgroundSize = "cover"}: Props) => {
+const DynamicImage = ({ imageName , children, width, height, margin, borderRadius, backgroundSize = "cover", isGif = false , gifPath = null}: Props) => {
   const [imageState,setImageState] = useState(null);
   const data = useStaticQuery(graphql`
     query {
@@ -35,7 +37,7 @@ const DynamicImage = ({ imageName , children, width, height, margin, borderRadiu
   );
 
   useEffect(()=>{
-    handleFilterFileName();
+    !isGif && handleFilterFileName();
   },[data]);
 
   const handleFilterFileName : any = () => {
@@ -49,7 +51,13 @@ const DynamicImage = ({ imageName , children, width, height, margin, borderRadiu
   return(
     <Fragment>
         {
-          imageState &&
+          isGif && 
+          <GifBanner urlGif={gifPath} backgroundSize={backgroundSize} height={height} width={width} margin={margin} borderRadius={borderRadius}>
+            {children}
+          </GifBanner> 
+        }
+        { 
+          !isGif && imageState &&
           <ImageBanner backgroundSize={backgroundSize} height={height} width={width} margin={margin} borderRadius={borderRadius} fluid={imageState?.node.childImageSharp.fluid}>
             {children}
           </ImageBanner> 

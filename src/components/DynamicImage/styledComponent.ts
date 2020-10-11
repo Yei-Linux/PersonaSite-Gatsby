@@ -16,5 +16,19 @@ export const ImageBanner = styled(BackgroundImage)<{backgroundSize : string,bord
     }
 `;
 
+export const GifBanner = styled.div<{backgroundSize : string,borderRadius: string,height: string,width: string,margin: string,urlGif: string}>`
+    height: ${props => props?.height};
+    width: ${props => props?.width};
+    margin: ${props => props?.margin};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: ${props => props?.backgroundSize} !important;
+    background-image: url(${props => props.urlGif});
+
+    &:after {
+        border-radius: ${props => props?.borderRadius};
+    }
+`;
 
 

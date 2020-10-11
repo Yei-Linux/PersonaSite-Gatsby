@@ -20,9 +20,9 @@ const IndexPage = () => (
     <Section
       isRow={false}
       isFirstBackground={true}
-      imagePath={"section2.jpg"}
+      imagePath={"astronaut1.jpg"}
       isReverse={false}
-      borderRadius={"2.5em"}
+      borderRadius={"50%"}
       sectionTitle={"Let me introduce myself"}
     >
       I'm a FullStack Developer based in Lima, Peru. I have a passion for

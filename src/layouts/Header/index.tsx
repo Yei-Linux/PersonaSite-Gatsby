@@ -5,6 +5,7 @@ import {
   HeaderItems,
   HeaderItem,
   HeaderItemText,
+  BreakPoint,
 } from "./styledComponent"
 
 import DynamicImage from "../../components/DynamicImage";
@@ -31,10 +32,10 @@ const Header = ({}: Props) => {
         <DynamicImage
             imageName={"mainlogo.png"}
             children={null}
-            width={"60px"}
-            height={"60px"}
+            width={"40px"}
+            height={"40px"}
             margin={"0"}
-            borderRadius={"0"}
+            borderRadius={"50%"}
         />
       </LogoContainer>
 
@@ -47,22 +48,26 @@ const Header = ({}: Props) => {
             AboutMe
           </HeaderItemText>
         </HeaderItem>
-        <HeaderItem>
-          <HeaderItemText
-            className="frontend"
-            onClick={(e: any) => handleScrollPageByMenuItem(e)}
-          >
-            Frontend
+        <BreakPoint>
+          <HeaderItem>
+            <HeaderItemText
+              className="frontend"
+              onClick={(e: any) => handleScrollPageByMenuItem(e)}
+            >
+              Frontend
           </HeaderItemText>
         </HeaderItem>
-        <HeaderItem>
-          <HeaderItemText
-            className="backend"
-            onClick={(e: any) => handleScrollPageByMenuItem(e)}
-          >
-            Backend
-          </HeaderItemText>
-        </HeaderItem>
+        </BreakPoint>
+        <BreakPoint>
+          <HeaderItem>
+            <HeaderItemText
+              className="backend"
+              onClick={(e: any) => handleScrollPageByMenuItem(e)}
+            >
+              Backend
+            </HeaderItemText>
+          </HeaderItem>
+        </BreakPoint>
         <HeaderItem>
           <HeaderItemText
             className="projects"

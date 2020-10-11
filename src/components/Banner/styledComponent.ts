@@ -3,8 +3,8 @@ import styled from "@emotion/styled";
 
 export const FlexContainer = tw.div`
     flex
-    justify-start
-    items-center
+    justify-center
+    items-end
     flex-grow
     h-full
 `
@@ -64,4 +64,24 @@ export const WoodenSign = styled.div`
         `
     }
     right: 28%;
+`
+
+export const TextPresentationContainer = tw.div`
+    flex
+    justify-center
+    items-center
+    p-6
+    bg-gray-200
+    rounded-lg
+    shadow-xl
+    mb-1
+`
+
+export const TextPresentation = tw.p`
+    text-teal-700
+    font-indiecustom
+    font-bold
+    text-center
+    w-64
+    text-2xl
 `
