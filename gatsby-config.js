@@ -1,4 +1,21 @@
+const { createProxyMiddleware } = require("http-proxy-middleware")
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      createProxyMiddleware({
+        target: "http://localhost:9000",
+        pathRewrite: {
+          "/.netlify/functions/": "",
+        },
+      })
+    )
+  },
   siteMetadata: {
     title: `MySite`,
     description: `Personal Site to show my tech skills and waiting for any freelance offer`,
