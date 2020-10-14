@@ -1,6 +1,6 @@
 const { createProxyMiddleware } = require("http-proxy-middleware")
 
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
@@ -9,7 +9,7 @@ module.exports = {
     app.use(
       "/.netlify/functions/",
       createProxyMiddleware({
-        target: "http://localhost:9000",
+        target: process.env.GATSBY_LAMBDA_URL,
         pathRewrite: {
           "/.netlify/functions/": "",
         },
