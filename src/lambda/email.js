@@ -5,10 +5,10 @@ export function handler(event,context, callback){
     notificationAxiosClient.post("email/send",emailRequest).then((response) => {
         console.log(response);
     })
-    context.done(null, {
+    callback(null, {
         statusCode: 200, 
         body: JSON.stringify({
-          msg: "Response sent"+process.env.GATSBY_NOTIFICATION_URL,
-        }),
+          msg: context
+        })
     })
 }
