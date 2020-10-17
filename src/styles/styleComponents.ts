@@ -40,5 +40,10 @@ export const TextSubtitle = tw.p`
 `
 export const Fixative = styled.a<{marginBottomStyle : string}>`
     display: block;
-    margin-bottom: ${props => props?.marginBottomStyle}
+    margin-bottom: ${props => props?.marginBottomStyle};
+`
+
+export const NotFoundContainer = styled.div`
+    width: 100%;
+    margin: auto;
 `

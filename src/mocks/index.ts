@@ -173,7 +173,7 @@ export const workProjects : any = [
     subtitle: "Application to prepare recipes of food's week.",
     backgroundSize:"92%",
     codeFrontUrl: "https://github.com/Yei-Linux/DailyFood-Angular",
-    codeBackUrl: "https://github.com/Yei-Linux/DailyNotification-Spring",
+    codeBackUrl: "https://github.com/Yei-Linux/DailyFood-SpringBoot",
     webUrl: "https://trusting-payne-d525d0.netlify.app/",
     isInProcess: false
   },
@@ -227,7 +227,7 @@ export const workProjects : any = [
     title: "TeacherBot",
     subtitle: "Application that teach any theme you search on it.",
     backgroundSize:"92%",
-    codeFrontUrl: "",
+    codeFrontUrl: "https://github.com/Yei-Linux/DeathTeacher",
     codeBackUrl: "https://github.com/Yei-Linux/DeathTeacher-Bot",
     webUrl: "",
     isInProcess: true
