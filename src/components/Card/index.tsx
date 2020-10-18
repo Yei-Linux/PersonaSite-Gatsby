@@ -60,7 +60,7 @@ const Card = ({ imagePath, iconPath, title, subtitle, backgroundSize = "cover", 
             {webUrl !== "" && <InfoButton href={webUrl} target={"_blank"}>Visit Web</InfoButton>}
           </InfoContainer>
           <ProcessInfoContainer>
-            { isInprocess &&  <TextProcess>In Process</TextProcess>}
+            { isInprocess &&  <TextProcess>In Process to Deploy</TextProcess>}
           </ProcessInfoContainer>
         </ActionsContainer>
       </TextContainer>
