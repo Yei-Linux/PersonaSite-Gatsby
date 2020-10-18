@@ -7,13 +7,6 @@ export function handler(event, context, callback) {
     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
   }
 
-  if (event.httpMethod !== 'POST') {
-    return {
-       statusCode: 500,
-       body: 'only by site'
-    }
- }
-
   let emailRequest = JSON.parse(event.body)
   notificationAxiosClient.post("email/send", emailRequest).then(response => {
     console.log(response)
