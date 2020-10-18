@@ -5,7 +5,7 @@ export function handler(event,context, callback){
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
-      };
+    };
 
     let emailRequest = JSON.parse(event.body);
     notificationAxiosClient.post("email/send",emailRequest).then((response) => {
