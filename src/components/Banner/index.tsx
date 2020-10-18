@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 import DynamicImage from "../DynamicImage"
 import {
@@ -10,10 +10,6 @@ import GitBanner from "../../gifs/gif-banner.gif";
 interface Props {}
 
 const Banner = ({}: Props) => {
-  useEffect(()=>{
-    console.log(process.env.GATSBY_NOTIFICATION_URL);
-  },[]);
-  
   return (
     <DynamicImage
       imageName={""}

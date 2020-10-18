@@ -8,8 +8,8 @@ export function handler(event, context, callback) {
   }
 
   let emailRequest = JSON.parse(event.body)
-  notificationAxiosClient.post("email/send", emailRequest).then(response => {
-    console.log(response)
+  notificationAxiosClient.post("email/send", emailRequest).then(() => {
+    console.log("sent")
   })
   callback(null, {
     statusCode: 200,
